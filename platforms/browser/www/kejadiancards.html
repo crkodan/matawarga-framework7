@@ -1,0 +1,90 @@
+<div class="page" data-name="kejadiancards">
+  <div class="navbar">
+      <div class="navbar-inner"> 
+        <div class="left">
+          <a href="#" class="panel-open"><i class="f7-icons">bars</i></a>
+        </div>        
+        <div class="title">Kejadian Cards</div>
+      </div>
+  </div>
+  <div class="page-content">
+    <form>      
+      <div class="list inset margin-top inline-labels">
+        <ul>
+        
+          <li class="item-content item-input">
+           <div class="item-inner">
+              <div class="item-input-wrap">
+                <input type="text" name="search" placeholder="Search driver...">
+                <span class="input-clear-button"></span>
+
+              </div>
+              <i class="icon f7-icons">search</i>
+              <a id="btnAdd" href='/registration/'><i class="icon f7-icons">add-round</i></a>
+            </div>
+          </li>
+        </ul>
+      </div>      
+    </form>         
+  </div>
+  <div class="page-content">
+    <script id="template" type="text/template7">
+      {{#each kejadians}}
+      <div class="card" >
+        <div class="card-header"><a href='/detail_kejadian/{{id}}/'>{{judul}}</a></div>
+          <div class="card-content card-content-padding">     
+              <div class="list inset list inline-labels no-hairlines-md">
+                <ul>
+                  <li class="item-content item-input">                   
+                    <div class="item-inner">
+                      <div class="item-title item-label">Deskripsi</div>
+                      <div class="item-input-wrap">
+                        <input type="text" id="license"  value="{{deskripsi}}" readonly="readonly">
+                        
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">                   
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <img src="{{gambar}}" id="gambarkejadian">
+                        
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">                   
+                    <div class="item-inner">
+                      <div class="item-title item-label">Instansi</div>
+                      <div class="item-input-wrap">
+                        <input type="text" id="instansi"  value="{{instansi_tujuan}}" readonly="readonly">
+                        
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                   
+                    <div class="item-inner">
+                      <div class="item-title item-label"><a href="#" id="{{id}}"><i class="f7-icons">hand_thumbsup</i></a></div>
+                      <div class="item-input-wrap">
+                        <input type="text" id="like" value="{{jumlahlike}}" readonly="readonly">
+                        
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                   
+                    <div class="item-inner">
+                      <div class="item-title item-label"><i class="f7-icons">captions_bubble</i></div>
+                      <div class="item-input-wrap">
+                        <input type="text" id="komen" value="{{jumlahkomen}}" readonly="readonly">                        
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>   
+          </div>  
+      </div>
+      {{/each}}
+    </script>
+  </div>
+</div>

@@ -1,0 +1,68 @@
+<div class="page" data-name="kejadiancards">
+  <div class="navbar">
+      <div class="navbar-inner">  
+          <div class="left back icon-only icon"><i class="icon icon-back"></i></div>          
+          <div class="title">Kejadian Cards</div>
+      </div>
+  </div>
+
+  <div class="page-content">
+    <script id="template" type="text/template7">
+      {{#each kejadians}}
+      <div class="card" >
+        <div class="card-header">Judul</div>
+        <input type="text" id="judul" value="{{judul}}" readonly="readonly">
+          <div class="card-content card-content-padding">     
+              <div class="list inset list inline-labels no-hairlines-md">
+                <ul>
+                  <li class="item-content item-input">
+                    
+                    <div class="item-inner">
+                      <div class="item-title item-label">Deskripsi</div>
+                      <div class="item-input-wrap">
+                        <input type="text" id="bod" value="{{deskripsi}}" readonly="readonly">
+                        
+                      </div>
+                    </div>
+                    <div class="item-inner">
+                      <div class="item-input-wrap">
+                        <img src="http://192.168.1.55/projectpmn/images/linkGAN" alt="Smiley face" height="42" width="42">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">                   
+                    <div class="item-inner">
+                      <div class="item-title item-label">Tujuan Instansi</div>
+                      <div class="item-input-wrap">
+                        <input type="text" id="license"  value="{{instansi}}" readonly="readonly">
+                        
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                   
+                    <div class="item-inner">
+                      <div class="item-title item-label">Jumlah Like</div>
+                      <div class="item-input-wrap">
+                        <input type="text" id="brand" value="{{jumlahlike}}" readonly="readonly">
+                        
+                      </div>
+                    </div>
+                  </li>
+                  <li class="item-content item-input">
+                   
+                    <div class="item-inner">
+                      <div class="item-title item-label">Jumlah Komen</div>
+                      <div class="item-input-wrap">
+                        <input type="text" id="kind" value="{{jumlahkomen}}" readonly="readonly">                      
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>   
+          </div>  
+      </div>
+      {{/each}}
+    </script>
+  </div>
+</div>
